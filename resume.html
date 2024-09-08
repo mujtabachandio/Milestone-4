@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="css/resume.css" />
+</head>
+<body>
+    <h1>Editable Resume Builder by MUjtaba CHandio</h1>
+    <main>
+        <form id="resumeForm">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required />
+
+                <label for="phone">Phone: </label>
+                <input type="tel" id="phone" name="phone" required />
+            </fieldset>
+
+            <fieldset id="education-section">
+                <legend>Education</legend>
+                <div id="education-container">
+                    <!-- Education fields will be added dynamically -->
+                </div>
+                <button type="button" id="addEducation">Add Education</button>
+            </fieldset>
+
+            <fieldset id="experience-section">
+                <legend>Experience</legend>
+                <div id="experience-container">
+                    <!-- Experience fields will be added dynamically -->
+                </div>
+                <button type="button" id="addExperience">Add Experience</button>
+            </fieldset>
+
+            <fieldset id="skills-section">
+                <legend>Skills</legend>
+                <div id="skills-container">
+                    <!-- Skills fields will be added dynamically -->
+                </div>
+                <button type="button" id="addSkill">Add Skill</button>
+            </fieldset>
+
+            <button type="submit">Generate Resume Below</button>
+        </form>
+
+        <div id="resumeOutput">
+            <!-- Resume content will be displayed here -->
+        </div>
+    </main>
+
+    <button id="editButton" class="edit">Edit</button>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

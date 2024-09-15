@@ -1,4 +1,3 @@
-// Function to handle form submission
 function handleFormSubmit(event) {
     event.preventDefault();
     var nameElement = document.getElementById("name");
@@ -26,7 +25,6 @@ function handleFormSubmit(event) {
         console.error("The resume output element is missing");
     }
 }
-// Function to handle toggling between Edit and Save modes
 function toggleEditMode() {
     var editButton = document.getElementById("editButton");
     if (!editButton)
@@ -53,7 +51,6 @@ function toggleEditMode() {
         editButton.textContent = "Edit";
     }
 }
-// Function to add a new education field
 function addEducationField() {
     var container = document.getElementById("education-container");
     if (container) {
@@ -62,7 +59,6 @@ function addEducationField() {
         container.appendChild(newField);
     }
 }
-// Function to add a new experience field
 function addExperienceField() {
     var container = document.getElementById("experience-container");
     if (container) {
@@ -71,7 +67,6 @@ function addExperienceField() {
         container.appendChild(newField);
     }
 }
-// Function to add a new skill field
 function addSkillField() {
     var container = document.getElementById("skills-container");
     if (container) {
@@ -80,7 +75,6 @@ function addSkillField() {
         container.appendChild(newField);
     }
 }
-// Attach event listeners only once
 function attachEventListeners() {
     var formElement = document.getElementById("resumeForm");
     var editButton = document.getElementById("editButton");
@@ -103,5 +97,4 @@ function attachEventListeners() {
         addSkillButton.addEventListener("click", addSkillField);
     }
 }
-// Initialize the script
 attachEventListeners();

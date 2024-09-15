@@ -1,4 +1,3 @@
-// Function to handle form submission
 function handleFormSubmit(event: Event): void {
     event.preventDefault();
 
@@ -46,7 +45,6 @@ function handleFormSubmit(event: Event): void {
     }
 }
 
-// Function to handle toggling between Edit and Save modes
 function toggleEditMode(): void {
     const editButton = document.getElementById("editButton") as HTMLButtonElement | null;
     if (!editButton) return;
@@ -74,7 +72,6 @@ function toggleEditMode(): void {
     }
 }
 
-// Function to add a new education field
 function addEducationField(): void {
     const container = document.getElementById("education-container") as HTMLDivElement | null;
     if (container) {
@@ -84,7 +81,6 @@ function addEducationField(): void {
     }
 }
 
-// Function to add a new experience field
 function addExperienceField(): void {
     const container = document.getElementById("experience-container") as HTMLDivElement | null;
     if (container) {
@@ -94,7 +90,6 @@ function addExperienceField(): void {
     }
 }
 
-// Function to add a new skill field
 function addSkillField(): void {
     const container = document.getElementById("skills-container") as HTMLDivElement | null;
     if (container) {
@@ -104,7 +99,6 @@ function addSkillField(): void {
     }
 }
 
-// Attach event listeners only once
 function attachEventListeners(): void {
     const formElement = document.getElementById("resumeForm");
     const editButton = document.getElementById("editButton");
@@ -133,5 +127,4 @@ function attachEventListeners(): void {
     }
 }
 
-// Initialize the script
 attachEventListeners();
